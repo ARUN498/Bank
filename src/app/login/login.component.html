@@ -12,7 +12,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-user"></i></span>
                 </div>
-                <input (change)="unameChange($event)" type="text" class="form-control" [placeholder]="placeHolderData">
+                <input [(ngModel)]="uname" type="text" id="u1" name="uname" class="form-control" [placeholder]="placeHolderData">
   
               </div>
               <div class="input-group form-group">
@@ -27,7 +27,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-key"></i></span>
                 </div>
-                <input type="password" class="form-control" placeholder="password">
+                <input [(ngModel)]="psw" id="p1" name="psw" type="password" class="form-control" placeholder="password">
               </div>
               <div class="row align-items-center remember">
                 <input type="checkbox">Remember Me
